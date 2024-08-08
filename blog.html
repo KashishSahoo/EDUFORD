@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduFord</title>
+    <link rel="icon" href="logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="sub-header"> 
+    <nav>
+      <a href="index.html"><img src="logo.png"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa-x" onclick="hideMenu()"></i>
+        <ul>
+            <li><a href="index.html"><b>Home</b></a></li>
+            <li><a href="course.html"><b>Course</b></a></li>
+            <li><a href="blog.html"><b>Blog</b></a></li>
+            <li><a href="about.html"><b>About</b></a></li>
+            <li><a href="contact.html"><b>Contact</b></a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Certifications & Online Programs For 2024</h1>
+    </section>    
+    
+    <!-- Blog Page Content -->
+     <section class="blog-content">
+       <div class="row">
+        <div class="blog-left">
+            <img src="certificate.jpg" >
+            <h2>Our Certifications & Online Programs For 2024</h2>
+            <p>This Business Analyst course provides a comprehensive introduction to the key skills and methodologies essential for success in the field. Students will learn to analyze business processes, gather and document requirements, and facilitate effective communication between stakeholders. The curriculum covers data analysis, process modeling, and the use of various analytical tools to support decision-making. Emphasizing real-world applications, the course also delves into project management and agile methodologies. By the end of the course, participants will be equipped to drive strategic initiatives and improve organizational performance through informed, data-driven insights and recommendations.</p>
+            <br>
+            <p>This Data Science course offers an in-depth exploration of data analysis, machine learning, and statistical modeling. Students will master the skills needed to extract meaningful insights from complex datasets, using programming languages such as Python and R. The curriculum includes data wrangling, exploratory data analysis, data visualization, and the application of machine learning algorithms. Emphasizing practical, hands-on experience, the course also covers big data technologies, data ethics, and effective communication of analytical results. By the end of the course, participants will be equipped to leverage data science techniques to solve real-world problems and drive data-informed decision-making in various industries.</p>
+            <br>
+            <p>This Full Stack Development course provides a comprehensive overview of both front-end and back-end web development. Students will learn to create dynamic, responsive web applications using a variety of programming languages and frameworks. The curriculum covers HTML, CSS, JavaScript, and frameworks like React or Angular for front-end development, as well as server-side technologies like Node.js, Express, and databases such as MongoDB and SQL for back-end development. Additionally, the course includes training in version control systems, API development, and deployment techniques. By the end of the course, participants will possess the skills to build, deploy, and maintain full-fledged web applications, ready for the demands of the modern tech industry.</p>
+            <br>
+            <p>This Machine Learning course provides an in-depth understanding of machine learning concepts, techniques, and tools. Students will learn to build, evaluate, and deploy machine learning models using Python and libraries such as scikit-learn, TensorFlow, and Keras. The curriculum covers supervised and unsupervised learning, data preprocessing, feature engineering, model selection, and performance metrics. Hands-on projects will enable students to apply algorithms like regression, classification, clustering, and neural networks to real-world datasets. By the end of the course, participants will be equipped to develop and implement machine learning solutions to solve complex problems and drive data-driven decision-making in various industries.</p>
+            <div class="comment-box">
+                <h3>Leave a comment</h3>
+                <form class="comment-form">
+                 <input type="text" placeholder="Enter Name">
+                 <input type="email" placeholder="Enter Email" >
+                 <textarea rows="5" placeholder="Your Comments"></textarea>
+                 <button type="submit" class="hero-btn red-btn">Post Comment</button>
+                </form>
+            </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>20</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>29</span>
+            </div>
+            <div>
+                <span>Full Stack</span>
+                <span>38</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>35</span>
+            </div>
+        </div>
+
+       </div>
+     </section>
+    
+   
+  
+ 
+         <!-- Footer -->
+         <section class="footer">
+          <h3>About Us</h3>
+          <p>EduFord is a global educational platform to help students to unlock there true and complete potential and have overall Complete successful life.</p>
+          <div class="icons">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <p>Made With <i class="fa-solid fa-heart"></i> by EduFord</p>
+          </div>
+         
+
+         </section>
+
+
+
+
+     </section>
+    <!-- JavaScript For Toggle Menu -->
+    <script>
+        var navLinks=document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right="0";
+        }
+        function hideMenu(){
+            navLinks.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
